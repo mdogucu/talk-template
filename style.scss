@@ -1,0 +1,32 @@
+$mainFontSize: 35px;
+$backgroundColor: #d6d2c4;
+$mainColor: #003b49;
+
+// Links and actions
+$linkColor: #a84d0e;
+$linkColorHover: darken( $linkColor, 20% );
+
+/*-- scss:rules --*/
+
+.reveal .slide .note {
+  border-left: 5px solid  #a84d0e;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background:#fcece0;
+}
+
+* {
+  color:#003b49;
+}
+
+.font25{font-size:25px}
+.font50{font-size:50px}
+.font75{font-size:75px}
+.font100{font-size:100px}
+.font150{font-size:150px}
+
+.horizontal-center {
+  display: block;
+  text-align: center;
+}
