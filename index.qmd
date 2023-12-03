@@ -1,0 +1,14 @@
+---
+title: "XXXXX"
+author: "Mine Dogucu <br> University of California Irvine"
+date: "XXXXX"
+subtitle: "Talk at XXXX"
+footer: "mdogucu.github.io/XXXX"
+format: 
+  revealjs:
+    slide-number: true
+    incremental: true
+    theme: ["style.scss"]
+---
+
+## Slides
