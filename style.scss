@@ -30,3 +30,12 @@ $linkColorHover: darken( $linkColor, 20% );
   display: block;
   text-align: center;
 }
+
+.pull-left {
+  float: left;
+  width: 50%;
+}
+.pull-right {
+  float: right;
+  width: 50%;
+}
