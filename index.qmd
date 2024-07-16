@@ -1,9 +1,9 @@
 ---
-title: "Hi, my name is Mine and this is my research agenda"
+title: "XXXXX"
 author: "Mine Dogucu <br> University of California Irvine"
-date: "2024-05-15"
-subtitle: "Talk at Department of Statistics at UCI Brown Bag"
-footer: "mdogucu.github.io/brown-bag"
+date: "XXXXX"
+subtitle: "Talk at XXXX"
+footer: "mdogucu.github.io/XXXX"
 format: 
   revealjs:
     slide-number: true
@@ -11,65 +11,7 @@ format:
     theme: ["style.scss"]
 ---
 
-# Background
-
-## Education
-
-- B.A., Mathematics, Smith College
-- M.S., Secondary School Science and Math Education, Bogazici University
-- Ph.D., Quantitative Research, Evaluation, and Measurement
-
-## Jobs
-
-- Assistant Professor of Applied Statistics, New College of Florida
-
-- Visiting Assistant Professor of Data Analytics, Denison University
-
-- Current: Assistant Professor of Teaching and Vice Chair of Undergraduate Studies, Department of Statistics, University of California Irvine
-
-# Teaching 
-
-I have taught XX many courses at UCI. Some of these courses I have taught more often than others.
-
-## STATS 6
-
-logo
-website
-
-## STATS 67
-
-## STATS 115
-
-# Research
-
-I collaborate with other statistics educators and students on a variety of research projects mainly on
-
-1. Data Science Education
-2. Bayesian Education
-3. Accessibility
-
-## Data Science Education (Examples)
-
-## Bayesian Education (Examples)
-
-## Accessibility (Examples)
-
-## Group Meetings
-
-Thursdays at 2 - 3 pm in DBH 2222 in Spring 2024. Let me know if you'd like to be added to Slack to be updated about Fall 2024 meeting schedule.
-
-## eCOTS 2024 at UCI
-
-## We can
-
--	talk about and exchange ideas about teaching.
--	work together on a pedagogical project. 
--	read and discuss manuscripts together.
--	talk about anything that could potentially make a positive impact on our undergraduate students.
-
-# Special thanks to all collaborators and students who make this work possible and fun.
-
-
+## Slides
 
 ## QUESTIONS?
 `r fontawesome::fa(name = "link")`
