@@ -1,10 +1,21 @@
-$mainFontSize: 35px;
-$backgroundColor: #d6d2c4;
-$mainColor: #003b49;
+/*-- scss:defaults --*/
+
+// Body
+$font-size: 35px;
+$body-bg: #d6d2c4;
+$body-color: #003b49;
+$text-muted: lighten($body-color, 5%);
+
 
 // Links and actions
-$linkColor: #a84d0e;
-$linkColorHover: darken( $linkColor, 20% );
+$link-color: #a84d0e;
+$link-hover-color: darken($link-color, 20% );
+
+
+// Code blocks
+
+$code-block-border-color: lighten($body-color, 10%) !default;
+$code-block-bg: #FFFFFF;
 
 /*-- scss:rules --*/
 
@@ -31,17 +42,15 @@ $linkColorHover: darken( $linkColor, 20% );
   text-align: center;
 }
 
-.pull-left {
-  float: left;
-  width: 50%;
-}
-.pull-right {
-  float: right;
-  width: 50%;
-}
-
 .font25{font-size:25px}
 .font50{font-size:50px}
 .font75{font-size:75px}
 .font100{font-size:100px}
 .font150{font-size:150px}
+
+
+/* focus on a specific row of a table if needed
+.focus tr:nth-child(2) { 
+  background: #f8c6a5; 
+}
+*/
