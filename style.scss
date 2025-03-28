@@ -54,3 +54,7 @@ $code-block-bg: #FFFFFF;
   background: #f8c6a5; 
 }
 */
+
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
