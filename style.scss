@@ -127,7 +127,6 @@ $highlight-bg: lighten($mustard, 20%);
 
 /*-- scss:rules --*/
 
-// The "Bohemian Inverse" Slide
 .reveal .slides section.inverse {
   // This line forces the actual Revealjs slide background variable to Teal
   --reveal-background-color: #{$teal-dark}; 
