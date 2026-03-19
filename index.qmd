@@ -1,33 +1,86 @@
 ---
 title: "XXXXX"
-author: "Mine Dogucu <br> University of California Irvine"
-date: "XXXXX"
 subtitle: "Talk at XXXX"
-footer: "mdogucu.github.io/XXXX"
-format: 
+author: 
+  - name: "Mine Dogucu"
+    affiliations: "University of California Irvine"
+date: "XXXXX"
+footer: "[mdogucu.github.io/XXXX](https://mdogucu.github.io/XXXX)"
+format:
   revealjs:
+    theme: [default, style.scss]
     slide-number: true
     incremental: true
-    theme: ["style.scss"]
+    chalkboard: true # Allows drawing on slides
+    transition: fade
+    link-external-newwindow: true
+    width: 1600
+    height: 900
+    slide-tone: true
 ---
 
-## Slides
+## Welcome
 
-## QUESTIONS?
+:::: {.columns}
 
-<hr>
-
-{{< fa link >}} Slides at [mdogucu.github.io/XXXX](https://mdogucu.github.io/XXXX).
-
-{{< fa brands github >}} Source code for slides at [github.com/mdogucu/XXXX](https://github.com/mdogucu/XXXX).
-
-<hr>
-
-{{< fa link >}} <a href = "http://minedogucu.com">minedogucu.com</a>  
-{{< fa brands github >}}  <a href = "http://github.com/mdogucu">mdogucu</a>   
-{{< fa brands mastodon >}} <a href = "https://mastodon.social/@MineDogucu">mastodon.social/@MineDogucu</a>  
-{{< fa brands bluesky >}} <a href = "https://bsky.app/profile/minedogucu.com">bsky.app/profile/minedogucu.com</a>  
-{{< fa brands linkedin >}} <a href = "https://www.linkedin.com/in/minedogucu/">minedogucu</a> 
-
-::: footer
+::: {.column width="60%"}
+-   **Context** 
+-   **Goal** 
+-   **Vibe** 
 :::
+
+::: {.column width="40%"}
+
+::: {.note}
+This is note block for extra emphasis or side thoughts.
+:::
+
+:::
+
+::::
+
+## Features Included
+
+-   **Chalkboard:** Press `B` to broadcast a whiteboard or `C` to draw on the slide.
+
+
+# Section One {background-color="#003b49" .inverse}
+
+## Centered Text
+
+::: {.v-center}
+A brief overview
+:::
+
+# Section Two {background-color="#003b49" .inverse}
+
+This text will appear below the mustard line, aligned to the left.
+
+## Another header
+
+This is how math formulae would look like.
+
+$$p(\theta | y) = \frac{p(y | \theta) p(\theta)}{p(y)}$$
+
+
+
+## Image Example
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| fig-alt: "Mine Dogucu holding a large die as big as her head in her hand. She is wearing a floral long-sleeve shirt and has curly ear length hair."
+#| out-width: "15%"
+knitr::include_graphics("https://www.minedogucu.com/img/Mine_Dice.png")
+```
+
+# QUESTIONS? 
+
+
+{{< fa link >}} [minedogucu.com](http://minedogucu.com)  
+{{< fa brands github >}} [mdogucu](http://github.com/mdogucu)  
+{{< fa brands bluesky >}} [@minedogucu.com](https://bsky.app/profile/minedogucu.com)  
+{{< fa brands linkedin >}} [minedogucu](https://www.linkedin.com/in/minedogucu/)  
+{{< fa brands mastodon >}} [@MineDogucu](https://mastodon.social/@MineDogucu)  

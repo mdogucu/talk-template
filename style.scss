@@ -1,60 +1,160 @@
 /*-- scss:defaults --*/
 
-// Body
-$font-size: 35px;
-$body-bg: #d6d2c4;
-$body-color: #003b49;
-$text-muted: lighten($body-color, 5%);
+// Color Palette
+$teal-dark: #003b49;       // Deep, readable teal
+$cream-warm: #fdfaf5;      // Softer than pure white for eye strain
+$terracotta: #a84d0e;     // Earthy accent
+$mustard: #e3a617;        // Secondary accent
+$muted-sage: #5b695e;     // For less prominent text
 
+// Fonts & Base
+$font-family-sans: "Georgia", "Palatino", serif; // Serif feels more "Professor"
+$presentation-font-size: 40px;
+$body-bg: $cream-warm;
+$body-color: $teal-dark;
 
-// Links and actions
-$link-color: #a84d0e;
-$link-hover-color: darken($link-color, 20% );
+// Links
+$link-color: $terracotta;
+$link-hover-color: $mustard;
 
-
-// Code blocks
-
-$code-block-border-color: lighten($body-color, 10%) !default;
-$code-block-bg: #FFFFFF;
+// Selection & Highlights
+$selection-bg: lighten($mustard, 30%);
+$highlight-bg: lighten($mustard, 20%);
 
 /*-- scss:rules --*/
 
+.reveal h1, .reveal h2, .reveal h3 {
+  color: $teal-dark;
+  text-transform: none;
+  font-weight: 700;
+  border-bottom: 2px solid $terracotta; // Stylish underline for headers
+  padding-bottom: 10px;
+}
+
+.reveal .footer {
+  font-family: sans-serif;
+  color: $muted-sage;
+}
+
+// Accessibility: High contrast code blocks
+.reveal code {
+  background-color: #f0f0f0;
+  color: #c2185b;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+// Custom Note Box 
 .reveal .slide .note {
-  border-left: 5px solid  #a84d0e;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding: 0.5em;
-  background:#fcece0;
+  border-left: 8px solid $mustard;
+  margin-top: 1em;
+  padding: 1em;
+  background: rgba($mustard, 0.1);
+  font-style: italic;
+  border-radius: 0 10px 10px 0;
 }
 
-* {
-  color:#003b49;
+// Responsive font classes
+.f-small { font-size: 0.7em; }
+.f-large { font-size: 1.5em; }
+
+// Fragment styling: make non-focused items more readable
+.reveal .slides section .fragment.semi-fade-out.visible {
+  opacity: 0.35;
 }
 
-.font25{font-size:25px}
-.font50{font-size:50px}
-.font75{font-size:75px}
-.font100{font-size:100px}
-.font150{font-size:150px}
+// Custom class to vertically center content on a slide
 
-.horizontal-center {
-  display: block;
+.v-center {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Fixed height ensures centering without overflowing the slide */
   text-align: center;
+  margin: auto;
+  
+  // Ensures headers inside centering don't have the underline
+  h1, h2, h3 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
-.font25{font-size:25px}
-.font50{font-size:50px}
-.font75{font-size:75px}
-.font100{font-size:100px}
-.font150{font-size:150px}
 
 
-/* focus on a specific row of a table if needed
-.focus tr:nth-child(2) { 
-  background: #f8c6a5; 
+// Polished Image Styling
+.reveal section img {
+  border: 4px solid $teal-dark; // Matching your primary dark teal
+  padding: 5px;
+  background-color: white;
+  box-shadow: 8px 8px 0px rgba($terracotta, 0.2); // A subtle "offset" shadow in terracotta
+  border-radius: 2px;
+  margin: 10px auto;
+  height: auto !important; // Keeps aspect ratio
+  object-fit: contain;
 }
-*/
 
-.reveal .slide-number > a[href*='title-slide'] {
-  display: none;
+
+
+// Math Scaling for Accessibility
+.reveal .math {
+  font-size: 1.2em;
+  color: darken($teal-dark, 10%);
+}
+
+
+// Style for the contact links slide
+.reveal section p {
+  line-height: 1.8; // Better for screen readers and legibility
+  margin-bottom: 0.5em;
+}
+
+.reveal section a {
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+    background-color: rgba($terracotta, 0.1); 
+    border-radius: 4px;
+  }
+}
+
+.reveal a:focus {
+  outline: 2px dashed $terracotta;
+  background-color: rgba($terracotta, 0.1);
+}
+
+/*-- scss:rules --*/
+
+// The "Bohemian Inverse" Slide
+.reveal .slides section.inverse {
+  // This line forces the actual Revealjs slide background variable to Teal
+  --reveal-background-color: #{$teal-dark}; 
+  
+  // This ensures the container itself also matches
+  background-color: $teal-dark !important;
+  color: $cream-warm;
+
+  h1, h2, h3 {
+    color: $cream-warm !important;
+    text-align: left;
+    border-bottom: 3px solid $mustard; 
+    padding-bottom: 10px;
+  }
+
+  p, li, code, span, .footer {
+    color: $cream-warm !important;
+  }
+}
+
+// Stable Centering (keeps next slides visible)
+.v-center {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; 
+  text-align: center;
+  margin: auto;
 }
